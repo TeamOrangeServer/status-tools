@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ -e /usr/bin/x-terminal-emulator ]]; then
+    /usr/bin/x-terminal-emulator -e "watch -n1 "sensors""
+else
+    /usr/bin/konsole -e "watch -n1 "sensors""
+fi
