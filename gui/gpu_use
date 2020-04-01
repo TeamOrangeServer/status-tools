@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#Team Orange Server
+#MPL-2.0
+
 if [[ -e /usr/bin/x-terminal-emulator ]]; then
     /usr/bin/x-terminal-emulator -e "watch -n1 "nvidia-smi""
 else
