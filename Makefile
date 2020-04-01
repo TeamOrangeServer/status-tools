@@ -1,6 +1,8 @@
 .PHONY: all
 all: github akari
 
+clean: gen_clean
+
 .PHONY: github
 github:
 	git push -u origin master
