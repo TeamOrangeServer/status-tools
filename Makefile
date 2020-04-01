@@ -13,8 +13,8 @@ akari:
 pull:
 	git pull
 
-.PHONY: setup
-setup:
+.PHONY: gen_config
+gen_config:
 	mv .git/config .git/config.old
 	cp .dev/config .git/config
 #	cp .dev/patchs/setup.patch .git/setup.patch
@@ -24,6 +24,7 @@ setup:
 #	echo "cd .git/" 
 #	echo "patch < setup.patch"
 
-.PHONY: clean
-clean:
+.PHONY: gen_clean
+gen_clean:
+	rm config
 	rm setup.patch
